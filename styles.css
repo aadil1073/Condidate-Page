@@ -1,0 +1,332 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  
+  
+  .container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  /* Header */
+  .header {
+    background: #2c3e50;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Features Section */
+  .features-section {
+    padding: 4em 0;
+  }
+  
+  .features-section .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 2em;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card h3 {
+    margin: 1em 0 0.5em;
+  }
+  
+  .card p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .read-more {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Footer */
+  .footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    margin-top: 2em;
+  }
+  
+  /* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4em 2em;
+    background: url('https://tse3.mm.bing.net/th?id=OIP.yh-DBa2CdlqLMF4umjB7SgHaE7&pid=Api&P=0&h=180');
+    background-size: cover;
+    background-position: center;
+    color: black;
+    text-align: left;
+    min-height: 80vh;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .hero-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    line-height: 1.2;
+    animation: slideInLeft 1s ease;
+  }
+  
+  .hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+    line-height: 1.6;
+    animation: slideInLeft 1.2s ease;
+  }
+  
+  .hero-images {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+  }
+  
+  .hero-img {
+    border-radius: 12px;
+    max-width: 300px;
+    width: 100%;
+    animation: fadeIn 1.5s ease;
+  }
+  
+  .cta-button {
+    padding: 0.8em 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    background: #3498db;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: bounceIn 1.4s ease;
+  }
+  
+  .cta-button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 2em;
+      text-align: center;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+    }
+  
+    .hero-images {
+      flex-direction: column;
+    }
+  }
+
+  /* Contact Form Section */
+.contact-section {
+    background-color: #d4d9e1; 
+    padding: 4em 3em;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2em; 
+    margin-bottom: 1em;
+    color: #2c3e50;
+    font-weight: 600;
+    text-transform: none; 
+  }
+  
+  .contact-form {
+    max-width: 500px; 
+    margin: 0 auto;
+    background: #fff;
+    padding: 2.5em; 
+    border-radius: 8px; 
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1em; 
+    font-size: 1em; 
+    margin-bottom: 1.2em; 
+    border: 1px solid #dcdfe6;
+    border-radius: 6px; 
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.3);
+    outline: none;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    min-height: 120px; 
+  }
+  
+  .contact-form button {
+    width: 50%;
+    padding: 0.7em; 
+    background: rgb(196, 129, 196);
+    color: white;
+    font-size: 1.1em; 
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #b84ba0;
+    transform: scale(1.05);
+  }
+  
+  .contact-form button:active {
+    transform: scale(1.02);
+  }
+  
+  /* Placeholder Text Color */
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #aaa;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .contact-form {
+      padding: 2em; 
+    }
+  
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 0.95em; /* Slightly smaller font size on mobile */
+    }
+  
+    .contact-form button {
+      font-size: 1em;
+    }
+  }
